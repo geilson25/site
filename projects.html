@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Geilson Silva</title>
+<meta name="description" content="Applied research and collaborative development projects by Geilson Silva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">Geilson Silva<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding:70px 0 60px;">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h1 style="font-size:clamp(2rem,4vw,2.8rem); margin-top:14px;">Applied research &amp; collaborative builds.</h1>
+  </div>
+
+  <div class="container">
+    <div class="project">
+      <div>
+        <p class="role">Research · Experimental Phase</p>
+        <h3>Insider Threat Detection POC</h3>
+      </div>
+      <div>
+        <p>A Proof of Concept system for the proactive detection of insider-driven data exfiltration. It ingests telemetry from Wazuh, Suricata, and the ELK Stack, applies Process Mining to reconstruct behavioral event sequences, and uses Isolation Forest, PCA, and K-Means to flag statistically anomalous behavior in near real time.</p>
+        <div class="stack">
+          <span>Process Mining</span><span>Isolation Forest</span><span>PCA</span><span>K-Means</span><span>Wazuh</span><span>Suricata</span><span>ELK Stack</span>
+        </div>
+        <p style="margin-top:16px; color:rgba(255,255,255,0.5); font-family:var(--font-mono); font-size:0.82rem;">Related publication: DT-Leak (SBSEG 2026)</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div>
+        <p class="role">Software Factory · Contributor</p>
+        <h3>Knowtify</h3>
+      </div>
+      <div>
+        <p>An interinstitutional Software Factory initiative developing a mobile application focused on the wellbeing of healthcare professionals at Hospital Santa Joana. The project combines UX research, mobile development, and health-sector domain knowledge to design tools that support clinician mental health and reduce burnout.</p>
+        <div class="stack">
+          <span>Mobile Development</span><span>UX Research</span><span>Interinstitutional Collaboration</span>
+        </div>
+        <p style="margin-top:16px; color:rgba(255,255,255,0.5); font-family:var(--font-mono); font-size:0.82rem;">Context: CESAR School × Hospital Santa Joana</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Geilson Silva · CESAR School</span>
+    <span><a href="contact.html">Get in touch</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

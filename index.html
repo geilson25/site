@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geilson Silva — Process Mining &amp; Insider Threat Research</title>
+<meta name="description" content="Geilson Silva is a Software Engineering M.Sc. candidate researching Process Mining-based detection of insider threats and data exfiltration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">Geilson Silva<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Research Fellow · CISSA/CESAR · Embrapii</p>
+      <h1>Mapping the behavioral <em>trace</em> insider threats leave behind.</h1>
+      <p class="hero-sub">M.Sc. candidate in Software Engineering at CESAR School, combining Process Mining and machine learning to detect data exfiltration before it happens — not after.</p>
+      <div class="hero-actions">
+        <a href="publications.html" class="btn btn-primary">View Publications</a>
+        <a href="about.html" class="btn btn-ghost">About Me</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>SBSEG 2026</strong><br>DT-Leak accepted</div>
+        <div><strong>Active POC</strong><br>Behavioral anomaly detection</div>
+        <div><strong>Knowtify</strong><br>Healthcare wellbeing app</div>
+      </div>
+    </div>
+    <div class="trace-wrap">
+      <!-- Signature graphic: a process trace with one anomalous path, literalizing the research subject -->
+      <svg class="trace-svg" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of a normal process trace branching into an anomalous path">
+        <path class="trace-path" d="M60,40 C120,60 140,100 130,140 C120,180 90,200 100,240 C110,280 150,300 150,340" />
+        <path class="trace-path" d="M60,40 C40,90 60,130 90,150 C130,175 160,190 170,230 C180,270 160,300 150,340" />
+        <path class="trace-path" d="M150,340 C160,360 190,370 220,380" />
+        <path class="trace-path anomaly" d="M150,340 C230,320 290,250 260,170 C240,115 290,90 340,70" />
+
+        <circle class="trace-node" cx="60" cy="40" r="5" />
+        <circle class="trace-node dim" cx="130" cy="140" r="4" />
+        <circle class="trace-node dim" cx="100" cy="240" r="4" />
+        <circle class="trace-node" cx="150" cy="340" r="5" />
+        <circle class="trace-node dim" cx="220" cy="380" r="4" />
+        <circle class="trace-node anomaly" cx="260" cy="170" r="6" />
+        <circle class="trace-node anomaly" cx="340" cy="70" r="6" />
+
+        <text class="trace-label" x="70" y="30">login</text>
+        <text class="trace-label" x="10" y="255">access</text>
+        <text class="trace-label" x="160" y="365">logout</text>
+        <text class="trace-label anomaly" x="268" y="165">bulk export</text>
+        <text class="trace-label anomaly" x="292" y="60">exfiltration</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Current Research</p>
+      <h2>Detecting the deviation before the breach.</h2>
+    </div>
+    <div class="split">
+      <div class="prose">
+        <p>Geilson's research investigates how <strong>insider threats</strong> — whether malicious, negligent, or the result of compromised credentials — can be identified through the behavioral traces they leave in system event logs, long before a full-scale <strong>data exfiltration</strong> event unfolds.</p>
+        <p>His work applies <strong>Process Mining</strong> to reconstruct how users actually behave, then compares that reality against expected patterns. The result is a Proof of Concept that pairs process discovery with unsupervised machine learning — <strong>Isolation Forest</strong>, <strong>PCA</strong>, and <strong>K-Means</strong> — layered on telemetry from Wazuh, Suricata, and the ELK Stack.</p>
+        <p>This research was formalized in <strong>"DT-Leak: Process Mining-Based Behavioral Detection of Data Exfiltration,"</strong> accepted at <strong>SBSEG 2026</strong>, Brazil's leading conference in information and systems security.</p>
+      </div>
+      <div>
+        <div class="card" style="border:1px solid var(--border);">
+          <p class="tag">Keywords</p>
+          <div class="keywords" style="margin-top:14px;">
+            <span class="keyword">Process Mining</span>
+            <span class="keyword">Insider Threats</span>
+            <span class="keyword">Data Exfiltration</span>
+            <span class="keyword">Behavioral Detection</span>
+            <span class="keyword">Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Highlights</p>
+      <h2>Where the work stands.</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-grid">
+      <div class="card">
+        <p class="tag">Published</p>
+        <h3>DT-Leak — SBSEG 2026</h3>
+        <p>Accepted paper introducing a Process Mining pipeline for behavioral exfiltration detection.</p>
+      </div>
+      <div class="card">
+        <p class="tag">In Progress</p>
+        <h3>Insider Threat POC</h3>
+        <p>Experimental testing of an anomaly detection system built on Wazuh, Suricata, and ELK telemetry.</p>
+      </div>
+      <div class="card">
+        <p class="tag">Applied Work</p>
+        <h3>Knowtify</h3>
+        <p>Interinstitutional Software Factory project building a wellbeing app for healthcare professionals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <p class="eyebrow" style="justify-content:center;">Get in touch</p>
+    <h2 style="margin-top:14px;">Open to conversations on cybersecurity,<br>behavioral analytics, and academic collaboration.</h2>
+    <div class="mt-lg">
+      <a href="contact.html" class="btn btn-ghost-dark">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Geilson Silva · CESAR School</span>
+    <span><a href="contact.html">Get in touch</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

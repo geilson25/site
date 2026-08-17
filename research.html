@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Geilson Silva</title>
+<meta name="description" content="Process Mining-based detection of insider threats and data exfiltration: research overview, methodology, and tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">Geilson Silva<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding:70px 0 80px;">
+  <div class="container">
+    <p class="eyebrow">Research</p>
+    <h1 style="font-size:clamp(2rem,4vw,2.8rem); margin-top:14px; max-width:16ch;">Investigating the behavioral fingerprints of insider threats.</h1>
+    <p class="hero-sub" style="margin-top:18px;">Process Mining and machine learning, applied to system event logs, to surface the deviations that precede data exfiltration.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Overview</p>
+      <h2>Why insider threats resist detection.</h2>
+    </div>
+    <div class="prose" style="max-width:760px;">
+      <p>Insider threats — malicious, negligent, or the product of compromised credentials — remain among the hardest security risks to catch, because the actors involved already hold legitimate access. Signature- and rule-based systems struggle to identify the subtle behavioral shifts that come before an exfiltration event.</p>
+      <p>This research closes that gap by applying <strong>Process Mining</strong> to reconstruct the <em>actual</em> behavioral processes of users from system event logs, then comparing them against expected or historical baselines. Deviations in sequence, timing, and flow become the raw signal for anomaly detection.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container split">
+    <div class="prose">
+      <p class="eyebrow">What is Process Mining, here?</p>
+      <h2 style="margin-top:14px; font-size:1.6rem;">Reading behavior from the log, not the policy.</h2>
+      <p style="margin-top:18px;">Process Mining uses event log data to discover, monitor, and improve real processes. In a security context, it reconstructs "as-is" behavioral models of how users interact with systems and data — revealing patterns, and breaks in pattern, that conventional log analysis misses.</p>
+    </div>
+    <div class="card" style="border:1px solid var(--border);">
+      <p class="tag">Keywords</p>
+      <div class="keywords" style="margin-top:14px;">
+        <span class="keyword">Process Mining</span>
+        <span class="keyword">Insider Threats</span>
+        <span class="keyword">Data Exfiltration</span>
+        <span class="keyword">Behavioral Detection</span>
+        <span class="keyword">Machine Learning</span>
+        <span class="keyword">Cybersecurity</span>
+        <span class="keyword">SBSEG</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Methodology</p>
+      <h2>A hypothetico-deductive approach, in three phases.</h2>
+    </div>
+    <ul class="steps">
+      <li class="step">
+        <span class="num">01</span>
+        <div>
+          <h3>Hypothesis formulation</h3>
+          <p>Defining behavioral indicators expected to precede exfiltration events, grounded in prior literature and threat-modeling frameworks.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">02</span>
+        <div>
+          <h3>POC development</h3>
+          <p>Building a pipeline that ingests security telemetry, applies process discovery, and runs anomaly detection models.</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">03</span>
+        <div>
+          <h3>Experimental testing</h3>
+          <p>Validating detection accuracy against simulated and historical insider-threat scenarios — measuring precision, recall, and false-positive rate.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Tools &amp; Techniques</p>
+      <h2 style="margin-top:14px;">The stack behind the pipeline.</h2>
+    </div>
+    <div class="tool-cols">
+      <div class="tool-list">
+        <h4>Security Telemetry</h4>
+        <div class="tool-item" style="border-color:var(--border-dark);">
+          <span class="name">Wazuh</span>
+          <span class="desc" style="color:rgba(255,255,255,0.6);">Host-based intrusion detection &amp; log collection</span>
+        </div>
+        <div class="tool-item" style="border-color:var(--border-dark);">
+          <span class="name">Suricata</span>
+          <span class="desc" style="color:rgba(255,255,255,0.6);">Network traffic analysis &amp; intrusion detection</span>
+        </div>
+        <div class="tool-item" style="border-color:var(--border-dark);">
+          <span class="name">ELK Stack</span>
+          <span class="desc" style="color:rgba(255,255,255,0.6);">Log aggregation, storage &amp; visualization</span>
+        </div>
+      </div>
+      <div class="tool-list">
+        <h4>Anomaly Detection</h4>
+        <div class="tool-item" style="border-color:var(--border-dark);">
+          <span class="name">Isolation Forest</span>
+          <span class="desc" style="color:rgba(255,255,255,0.6);">Unsupervised detection via recursive partitioning</span>
+        </div>
+        <div class="tool-item" style="border-color:var(--border-dark);">
+          <span class="name">PCA</span>
+          <span class="desc" style="color:rgba(255,255,255,0.6);">Dimensionality reduction to isolate behavioral variance</span>
+        </div>
+        <div class="tool-item" style="border-color:var(--border-dark);">
+          <span class="name">K-Means</span>
+          <span class="desc" style="color:rgba(255,255,255,0.6);">Clustering to identify behavioral archetypes &amp; outliers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <div class="container">
+    <p class="eyebrow" style="justify-content:center;">Read the paper</p>
+    <h2 style="margin-top:14px;">This research is formalized in DT-Leak, accepted at SBSEG 2026.</h2>
+    <div class="mt-lg">
+      <a href="publications.html" class="btn btn-ghost-dark">View Publications</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Geilson Silva · CESAR School</span>
+    <span><a href="contact.html">Get in touch</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
