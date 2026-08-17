@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTI Dashboard — Geilson Silva</title>
+<meta name="description" content="A live global threat map paired with curated Cyber Threat Intelligence resources: reports, vendor feeds, and open platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">Geilson Silva<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="manguewalls.html">Manguewalls</a></li>
+      <li><a href="cti-dashboard.html">CTI Dashboard</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" style="padding:70px 0 60px;">
+  <div class="container">
+    <p class="eyebrow">Tool</p>
+    <h1 style="font-size:clamp(2rem,4vw,2.8rem); margin-top:14px; max-width:20ch;">CTI Dashboard — a live view of the threat landscape.</h1>
+    <p class="hero-sub" style="margin-top:18px;">A real-time global attack map paired with a curated set of Cyber Threat Intelligence resources — reports, vendor feeds, and open platforms — kept in one place for quick reference.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="embed-card">
+      <iframe src="https://ctig.netlify.app/" title="CTI Dashboard — live threat map and resources" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="embed-fallback">
+        <p>If the dashboard doesn't load here due to your browser's security policy, open it directly.</p>
+        <a href="https://ctig.netlify.app/" target="_blank" rel="noopener" class="btn btn-ghost">Open Full Dashboard →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Curated Resources</p>
+      <h2>Reports, vendors, and platforms worth bookmarking.</h2>
+    </div>
+    <div class="resource-cols">
+      <div class="resource-col">
+        <h4>Cyber Threat Reports</h4>
+        <a href="https://www.bssn.go.id/wp-content/uploads/2024/03/Lanskap-Keamanan-Siber-Indonesia-2023.pdf" target="_blank" rel="noopener">Lanskap Keamanan Siber Indonesia</a>
+        <a href="https://www.cyber.gov.au/about-us/view-all-content/reports-and-statistics/asd-cyber-threat-report-july-2022-june-2023" target="_blank" rel="noopener">ACSC Annual Cyber Threat Report 2022–23</a>
+      </div>
+      <div class="resource-col">
+        <h4>Vendors / Labs CTI</h4>
+        <a href="https://www.recordedfuture.com/" target="_blank" rel="noopener">Recorded Future</a>
+        <a href="https://www.eset.com/" target="_blank" rel="noopener">ESET</a>
+      </div>
+      <div class="resource-col">
+        <h4>Threat Intel Platforms</h4>
+        <a href="https://www.misp-project.org/" target="_blank" rel="noopener">MISP</a>
+        <a href="https://opencti.io/" target="_blank" rel="noopener">OpenCTI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Geilson Silva</span>
+    <span><a href="contact.html">Get in touch</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

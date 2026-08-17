@@ -629,6 +629,69 @@ a { color: inherit; }
 
 .talk-card .title { color: var(--white); font-weight: 500; font-size: 0.95rem; }
 
+/* CTI Dashboard */
+.embed-card {
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-dark-2);
+}
+.embed-card iframe {
+  width: 100%;
+  height: 640px;
+  border: 0;
+  display: block;
+  background: var(--bg-dark);
+}
+.embed-fallback {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.embed-fallback p {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+}
+@media (max-width: 600px) {
+  .embed-card iframe { height: 420px; }
+}
+
+.resource-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+@media (max-width: 800px) { .resource-cols { grid-template-columns: 1fr; } }
+
+.resource-col h4 {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--slate-light);
+  margin-bottom: 16px;
+}
+.resource-col a {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.resource-col a:hover { color: var(--accent-strong); }
+.resource-col a::after {
+  content: " ↗";
+  font-size: 0.75rem;
+  color: var(--slate-light);
+}
+
 /* Contact */
 .contact-grid {
   display: grid;
